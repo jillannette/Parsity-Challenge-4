@@ -1,0 +1,18 @@
+const numbers = [69, 59, 15, 5, 8, 58];
+const products = [];
+
+
+for (let i = 0; i < numbers.length; i++) {
+ 
+ let currentNum = numbers[i];
+ let nextNum =  numbers[i + 1];
+ let product = currentNum * nextNum;
+
+ if (product) {
+   products.push(product);
+}
+}
+
+let largestPair = Math.max(...products);
+console.log(largestPair);
+//  4071
